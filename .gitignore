@@ -1,0 +1,9 @@
+.env
+build/
+volume/
+.terraform/
+*.tfstate
+*tfstate.*
+terraform.tfstate.d/
+tfplan
+fault-injection-exercises.md
