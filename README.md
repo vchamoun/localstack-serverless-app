@@ -1,4 +1,5 @@
 **LocalStack-Terraform Serverless App**
+
 Terraform Configuration for an S3 -> Lambda -> DynamoDB pipeline with an API Gateway read path.
 Runnable agains LocalStack or real AWS Accounts.
 
