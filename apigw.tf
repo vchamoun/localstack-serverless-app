@@ -56,9 +56,3 @@ resource "aws_api_gateway_stage" "apigw_get_stage" {
   deployment_id = aws_api_gateway_deployment.apigw_get_deployment.id
   stage_name    = "dev"
 }
-
-
-output "files_endpoint" {
-  description = "Full URL of the GET /files endpoint"
-  value       = "${aws_api_gateway_stage.apigw_get_stage.invoke_url}/files"
-}

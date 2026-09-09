@@ -1,0 +1,627 @@
+localstack-main  | LocalStack supervisor: starting
+localstack-main  | LocalStack supervisor: localstack process (PID 17) starting
+localstack-main  | 
+localstack-main  | LocalStack version: 2026.8.1
+localstack-main  | LocalStack build date: 2026-09-02
+localstack-main  | LocalStack build git hash: bc6e73922
+localstack-main  | 
+localstack-main  | 2026-09-09T07:30:45.934  INFO --- [  MainThread] l.licensing.licensingv2    : Successfully activated cached license 9d2ce785-c259-43b0-b4a0-4dc307e82450:trial from /var/lib/localstack/cache/license.json 🔑✅
+localstack-main  | 2026-09-09T07:30:46.063 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_runtime_create.set_default_providers_to_pro = <function set_default_providers_to_pro at 0xffff80a27ec0>)
+localstack-main  | 2026-09-09T07:30:46.063 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_runtime_create:set_default_providers_to_pro
+localstack-main  | 2026-09-09T07:30:46.063 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_runtime_create.setup_otel = <function setup_otel at 0xffff80a34720>)
+localstack-main  | 2026-09-09T07:30:46.063 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.hooks.on_runtime_create:setup_otel is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:46.063 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_runtime_create.configure_licensing_for_service_plugins = <function configure_licensing_for_service_plugins at 0xffff80a27b00>)
+localstack-main  | 2026-09-09T07:30:46.063 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_runtime_create:configure_licensing_for_service_plugins
+localstack-main  | 2026-09-09T07:30:46.976  INFO --- [  MainThread] localstack.utils.bootstrap : Execution of "_resolve_api_provider_specs" took 912.54ms
+localstack-main  | 2026-09-09T07:30:46.976 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.runtime.components.aws = <class 'localstack.pro.core.aws.components.AwsComponents'>)
+localstack-main  | 2026-09-09T07:30:46.976 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.runtime.components:aws
+localstack-main  | 2026-09-09T07:30:46.977 DEBUG --- [  MainThread] localstack.utils.run       : Executing command: rm -rf "/tmp/localstack"
+localstack-main  | 2026-09-09T07:30:48.346 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start._disable_iam_during_startup = <function _disable_iam_during_startup at 0xffff7e8c74c0>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:_disable_iam_during_startup
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start._patch_botocore_endpoint_in_memory = <function _patch_botocore_endpoint_in_memory at 0xffff7ef43060>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.hooks.on_infra_start:_patch_botocore_endpoint_in_memory is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start._patch_botocore_parser_serializer = <function _patch_botocore_parser_serializer at 0xffff7ef42de0>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:_patch_botocore_parser_serializer
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.add_custom_domain_names_resolving_to_localstack = <function add_custom_domain_names_resolving_to_localstack at 0xffff7e921ee0>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:add_custom_domain_names_resolving_to_localstack
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.apply_aws_runtime_patches = <function apply_aws_runtime_patches at 0xffff79dc5620>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:apply_aws_runtime_patches
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.enable_lambda_executor_licensing = <function enable_lambda_executor_licensing at 0xffff7e8de840>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:enable_lambda_executor_licensing
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.init_licenseinfo_handler = <function init_licenseinfo_handler at 0xffff79dc5b20>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:init_licenseinfo_handler
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.init_resources_handler = <function init_resources_handler at 0xffff79dc5f80>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:init_resources_handler
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.init_stackinfo_handler = <function init_stackinfo_handler at 0xffff79dc6340>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:init_stackinfo_handler
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_avro_serialization_backend = <function register_avro_serialization_backend at 0xffff79dc6700>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:register_avro_serialization_backend
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_aws_analytics_env_vars = <function register_aws_analytics_env_vars at 0xffff7e921b20>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:register_aws_analytics_env_vars
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_aws_avro_plugins = <function register_aws_avro_plugins at 0xffff79dc6ac0>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:register_aws_avro_plugins
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_aws_codec_rules = <function register_aws_codec_rules at 0xffff7e900540>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:register_aws_codec_rules
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_aws_config_module = <function register_aws_config_module at 0xffff7e9219e0>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:register_aws_config_module
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_aws_cors_rules = <function register_aws_cors_rules at 0xffff79dc6b60>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:register_aws_cors_rules
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_aws_deprecations = <function register_aws_deprecations at 0xffff7e921c60>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:register_aws_deprecations
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_aws_dns_name_patterns = <function register_aws_dns_name_patterns at 0xffff7e921d00>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:register_aws_dns_name_patterns
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_aws_service_dependencies = <function register_aws_service_dependencies at 0xffff79bb94e0>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:register_aws_service_dependencies
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_aws_validation_path_prefix = <function register_aws_validation_path_prefix at 0xffff7e921da0>)
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:register_aws_validation_path_prefix
+localstack-main  | 2026-09-09T07:30:48.347 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_custom_endpoints = <function register_custom_endpoints at 0xffff7e8de5c0>)
+localstack-main  | 2026-09-09T07:30:48.348 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:register_custom_endpoints
+localstack-main  | 2026-09-09T07:30:48.348 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_eks_ec2_hooks = <function register_eks_ec2_hooks at 0xffff7eb1bce0>)
+localstack-main  | 2026-09-09T07:30:48.348 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:register_eks_ec2_hooks
+localstack-main  | 2026-09-09T07:30:48.348 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_eks_internal_resources = <function register_eks_internal_resources at 0xffff7eb1bba0>)
+localstack-main  | 2026-09-09T07:30:48.348 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:register_eks_internal_resources
+localstack-main  | 2026-09-09T07:30:48.348 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_lambda_debug_mode_endpoints = <function register_lambda_debug_mode_endpoints at 0xffff7e8de980>)
+localstack-main  | 2026-09-09T07:30:48.348 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:register_lambda_debug_mode_endpoints
+localstack-main  | 2026-09-09T07:30:48.348 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_launchpad_api = <function register_launchpad_api at 0xffff79bbb920>)
+localstack-main  | 2026-09-09T07:30:48.348 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:register_launchpad_api
+localstack-main  | 2026-09-09T07:30:48.348 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_store_valid_regions_resolver = <function register_store_valid_regions_resolver at 0xffff79dc5760>)
+localstack-main  | 2026-09-09T07:30:48.348 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:register_store_valid_regions_resolver
+localstack-main  | 2026-09-09T07:30:48.348 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.validate_configuration = <function validate_configuration at 0xffff7e8de480>)
+localstack-main  | 2026-09-09T07:30:48.348 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:validate_configuration
+localstack-main  | 2026-09-09T07:30:48.348 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start._publish_config_as_analytics_event = <function _publish_config_as_analytics_event at 0xffff79bbbce0>)
+localstack-main  | 2026-09-09T07:30:48.348 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:_publish_config_as_analytics_event
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start._run_init_scripts_on_start = <function _run_init_scripts_on_start at 0xffff79bd11c0>)
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:_run_init_scripts_on_start
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.apply_runtime_patches = <function apply_runtime_patches at 0xffff79bd1940>)
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:apply_runtime_patches
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.conditionally_enable_debugger = <function conditionally_enable_debugger at 0xffff79bd20c0>)
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:conditionally_enable_debugger
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.delete_cached_certificate = <function delete_cached_certificate at 0xffff7e921760>)
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.hooks.on_infra_start:delete_cached_certificate is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.deprecation_warnings = <function deprecation_warnings at 0xffff7e921580>)
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:deprecation_warnings
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.eager_load_services = <function eager_load_services at 0xffff80a27e20>)
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.hooks.on_infra_start:eager_load_services is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.init_response_mutation_handler = <function init_response_mutation_handler at 0xffff796cc220>)
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:init_response_mutation_handler
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.kubernetes_api_patches = <function kubernetes_api_patches at 0xffff796cc4a0>)
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:kubernetes_api_patches
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.platform_plugins_add_service_plugin_listener = <function platform_plugins_add_service_plugin_listener at 0xffff796cc720>)
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:platform_plugins_add_service_plugin_listener
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.platform_plugins_on_infra_start = <function platform_plugins_on_infra_start at 0xffff796cc860>)
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:platform_plugins_on_infra_start
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_swagger_endpoints = <function register_swagger_endpoints at 0xffff796ce3e0>)
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:register_swagger_endpoints
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.setup_dns_configuration_on_host = <function setup_dns_configuration_on_host at 0xffff796cea20>)
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:setup_dns_configuration_on_host
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.start_dns_server = <function start_dns_server at 0xffff796ce8e0>)
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_start:start_dns_server
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.start_memory_profiler = <function start_memory_profiler at 0xffff796cf1a0>)
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.hooks.on_infra_start:start_memory_profiler is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.validate_k8s_pod_config_on_start = <function validate_k8s_pod_config_on_start at 0xffff7ee8e5c0>)
+localstack-main  | 2026-09-09T07:30:48.349 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.hooks.on_infra_start:validate_k8s_pod_config_on_start is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:48.415 DEBUG --- [  MainThread] localstack.dns.server      : Determined fallback dns: 127.0.0.11
+localstack-main  | 2026-09-09T07:30:48.415 DEBUG --- [  MainThread] localstack.dns.server      : Starting DNS servers (tcp/udp port 53 on 0.0.0.0)...
+localstack-main  | 2026-09-09T07:30:48.415 DEBUG --- [  MainThread] localstack.dns.server      : Adding host .*localhost.localstack.cloud pointing to LocalStack
+localstack-main  | 2026-09-09T07:30:48.415 DEBUG --- [  MainThread] localstack.dns.server      : Adding host .*localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.A: 1>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.415 DEBUG --- [  MainThread] localstack.dns.server      : Adding host .*localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.AAAA: 2>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.415 DEBUG --- [  MainThread] localstack.dns.server      : Adding host analytics-localhost.localstack.cloud pointing to LocalStack
+localstack-main  | 2026-09-09T07:30:48.415 DEBUG --- [  MainThread] localstack.dns.server      : Adding host analytics-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.A: 1>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.415 DEBUG --- [  MainThread] localstack.dns.server      : Adding host analytics-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.AAAA: 2>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.415 DEBUG --- [  MainThread] localstack.dns.server      : Adding host control-storage-localhost.localstack.cloud pointing to LocalStack
+localstack-main  | 2026-09-09T07:30:48.415 DEBUG --- [  MainThread] localstack.dns.server      : Adding host control-storage-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.A: 1>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host control-storage-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.AAAA: 2>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host data-localhost.localstack.cloud pointing to LocalStack
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host data-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.A: 1>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host data-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.AAAA: 2>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host query-localhost.localstack.cloud pointing to LocalStack
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host query-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.A: 1>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host query-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.AAAA: 2>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host runtime-localhost.localstack.cloud pointing to LocalStack
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host runtime-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.A: 1>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host runtime-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.AAAA: 2>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host storage-localhost.localstack.cloud pointing to LocalStack
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host storage-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.A: 1>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host storage-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.AAAA: 2>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host stream-localhost.localstack.cloud pointing to LocalStack
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host stream-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.A: 1>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host stream-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.AAAA: 2>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host sync-localhost.localstack.cloud pointing to LocalStack
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host sync-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.A: 1>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host sync-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.AAAA: 2>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host tags-localhost.localstack.cloud pointing to LocalStack
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host tags-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.A: 1>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host tags-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.AAAA: 2>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host workflows-localhost.localstack.cloud pointing to LocalStack
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host workflows-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.A: 1>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.416 DEBUG --- [  MainThread] localstack.dns.server      : Adding host workflows-localhost.localstack.cloud with record DynamicRecord(record_type=<RecordType.AAAA: 2>, record_id=None)
+localstack-main  | 2026-09-09T07:30:48.417 DEBUG --- [-functhread1] localstack.dns.server      : DNS Server started
+localstack-main  | 2026-09-09T07:30:49.436 DEBUG --- [  MainThread] localstack.dns.server      : DNS server startup finished.
+localstack-main  | 2026-09-09T07:30:49.442  WARN --- [  MainThread] l.services.internal        : Enabling diagnose endpoint, please be aware that this can expose sensitive information via your network.
+localstack-main  | 2026-09-09T07:30:51.982 DEBUG --- [  MainThread] localstack.runtime.init    : Init scripts discovered: {BOOT: [], START: [], READY: [], SHUTDOWN: []}
+localstack-main  | 2026-09-09T07:30:51.982 DEBUG --- [  MainThread] localstack.plugins         : Checking for the usage of deprecated community features and configs...
+localstack-main  | 2026-09-09T07:30:52.093 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.appinspector = <class 'localstack.pro.core.appinspector.plugins.AppInspectorPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:appinspector
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.aws-request-analytics = <class 'localstack.pro.core.aws.analytics.plugins.AwsRequestAnalyticsPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:aws-request-analytics
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.base-persistence = <class 'localstack.pro.core.persistence.plugins.BasePersistence'>)
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:base-persistence
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.bedrock-extension = <class 'localstack.pro.core.services.bedrock.plugins.BedrockExtensionPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:bedrock-extension is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.chaos = <class 'localstack.pro.core.chaos.plugin.ChaosPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:chaos
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.chaos-basic = <class 'localstack.pro.core.chaos.plugin.ChaosBasicPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:chaos-basic is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.ecs-firelens = <class 'localstack.pro.core.services.ecs.log_collectors.firelens.EcsFirelensPlatformPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:ecs-firelens
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.ecs-k8s-task-executor = <class 'localstack.pro.core.services.ecs.plugins.EcsK8sPlatformPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:ecs-k8s-task-executor is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.fis-emulation = <class 'localstack.pro.core.services.fis.plugins.FisEmulationPlatformPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:fis-emulation
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.iam-enforcement = <class 'localstack.pro.core.services.iam.plugins.IamEnforcementPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:iam-enforcement
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.iam-stream = <class 'localstack.pro.core.services.iam.plugins.IamStreamPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:iam-stream
+localstack-main  | 2026-09-09T07:30:52.094 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.lambda-esm-kafka = <class 'localstack.pro.core.services.lambda_.event_source_mapping.plugins.KafkaEsmPollerPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:lambda-esm-kafka
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.lambda-ldm = <class 'localstack.pro.core.services.lambda_.lambda_debug_mode.plugins.LDMPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:lambda-ldm
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.non-default-partitions = <class 'localstack.pro.core.aws.plugins.NonDefaultPartitionPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:non-default-partitions
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.pod-encryption = <class 'localstack.pro.core.persistence.pods.plugins.PodEncryptionPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:pod-encryption is disabled, reason: This feature is not part of the active license agreement
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.pods = <class 'localstack.pro.core.persistence.pods.plugins.PodsPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:pods
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.replicator = <class 'localstack.pro.core.replicator.plugins.ReplicatorPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:replicator
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.snapshot = <class 'localstack.pro.core.persistence.snapshot.plugins.SnapshotPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:snapshot is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.state-reset = <class 'localstack.pro.core.persistence.reset.plugins.StateResetPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:state-reset
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.transparent-endpoint-injection = <class 'localstack.pro.core.dns.plugins.TransparentEndpointInjectionPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:transparent-endpoint-injection
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.xray-extension = <class 'localstack.pro.core.services.xray.plugins.XRayExtensionPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:xray-extension
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.certificates = <class 'localstack.certificates.plugins.CertificatesPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:certificates
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.customizable_registry_strategy = <class 'localstack.utils.container.plugins.CustomizableRegistryStrategyPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.095 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:customizable_registry_strategy
+localstack-main  | 2026-09-09T07:30:52.096 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.extensions = <class 'localstack.extensions.plugins.ExtensionsPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.096 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:extensions
+localstack-main  | 2026-09-09T07:30:52.096 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.platform.plugin.twins = <class 'localstack.pro.twins.plugins.TwinsPlatformPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.096 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.platform.plugin:twins
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] l.pro.core.plugins         : setting up transparent endpoint injection
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding host .*.amazonaws.com pointing to LocalStack
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding host .*.amazonaws.com with record DynamicRecord(record_type=<RecordType.A: 1>, record_id=None)
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding host .*.amazonaws.com with record DynamicRecord(record_type=<RecordType.AAAA: 2>, record_id=None)
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding host .*aws.amazon.com pointing to LocalStack
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding host .*aws.amazon.com with record DynamicRecord(record_type=<RecordType.A: 1>, record_id=None)
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding host .*aws.amazon.com with record DynamicRecord(record_type=<RecordType.AAAA: 2>, record_id=None)
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding host .*cloudfront.net pointing to LocalStack
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding host .*cloudfront.net with record DynamicRecord(record_type=<RecordType.A: 1>, record_id=None)
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding host .*cloudfront.net with record DynamicRecord(record_type=<RecordType.AAAA: 2>, record_id=None)
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding skip pattern ^localstack-assets\.s3(\.[^\.]+)?\.amazonaws\.com
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding skip pattern .*(checkip|forums|console|docs|clientvpn|sso|boto3|(signin(\-reg)?))\.([^\.]+\.)?(aws\.amazon|amazonaws)\.com
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding skip pattern ^github-production-release-.*\.s3(\.[^\.]+)?\.amazonaws\.com
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding skip pattern ^(?:prod|staging)sharedcertsstack-.*\.s3(\.[^\.]+)?\.amazonaws\.com
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding skip pattern .*captcha-prod\.s3(\.[^\.]+)?\.amazonaws\.com
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding skip pattern ^aws-glue-etl-artifacts\.s3(\.[^\.]+)?\.amazonaws\.com
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding skip pattern ^aws\.amazon\.com
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding skip pattern ^redshift-maven-repository\.s3(\.[^\.]+)?\.amazonaws\.com
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding skip pattern ^d2glxqk2uabbnd\.cloudfront\.net
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding skip pattern ^localstack-pods-.*\.s3(\.[^\.]+)?\.amazonaws\.com
+localstack-main  | 2026-09-09T07:30:52.161 DEBUG --- [  MainThread] localstack.dns.server      : Adding skip pattern ^prod-registry-k8s-io-.*\.s3\.(dualstack\.)?.*\.amazonaws\.com
+localstack-main  | 2026-09-09T07:30:52.162  INFO --- [  MainThread] l.extensions.plugins       : loaded 0 extensions
+localstack-main  | 2026-09-09T07:30:52.162 DEBUG --- [  MainThread] l.extensions.plugins       : calling extensions on_platform_start
+localstack-main  | 2026-09-09T07:30:52.162 DEBUG --- [  MainThread] l.extensions.plugins       : calling extensions update_gateway_routes
+localstack-main  | 2026-09-09T07:30:52.162 DEBUG --- [  MainThread] l.extensions.plugins       : calling extensions update_request_handlers
+localstack-main  | 2026-09-09T07:30:52.162 DEBUG --- [  MainThread] l.extensions.plugins       : calling extensions update_response_handlers
+localstack-main  | 2026-09-09T07:30:52.162 DEBUG --- [  MainThread] l.extensions.plugins       : calling extensions update_exception_handlers
+localstack-main  | 2026-09-09T07:30:52.162 DEBUG --- [  MainThread] l.extensions.plugins       : calling extensions update_finalizers
+localstack-main  | 2026-09-09T07:30:52.162 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:bedrock-extension is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:52.162 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:chaos-basic is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:52.162 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:ecs-k8s-task-executor is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:52.162 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:pod-encryption is disabled, reason: This feature is not part of the active license agreement
+localstack-main  | 2026-09-09T07:30:52.162 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:snapshot is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:52.306 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.services.organizations.plugins.policies = <class 'localstack.pro.core.services.organizations.organizations_plugin.OrganizationsPoliciesPlugin'>)
+localstack-main  | 2026-09-09T07:30:52.307 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.services.organizations.plugins:policies
+localstack-main  | 2026-09-09T07:30:52.307 DEBUG --- [  MainThread] l.p.c.services.iam.router  : Adding IAM policy enforcement routes...
+localstack-main  | 2026-09-09T07:30:52.313 DEBUG --- [  MainThread] l.p.c.services.iam.router  : Adding IAM policy generation routes...
+localstack-main  | 2026-09-09T07:30:52.328 DEBUG --- [  MainThread] l.pro.twins.plugins        : Twins: no twins enabled (set TWINS_ENABLED to a comma-separated list of twin names)
+localstack-main  | 2026-09-09T07:30:52.328 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:bedrock-extension is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:52.328 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:chaos-basic is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:52.328 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:ecs-k8s-task-executor is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:52.328 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:pod-encryption is disabled, reason: This feature is not part of the active license agreement
+localstack-main  | 2026-09-09T07:30:52.328 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:snapshot is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:52.404 DEBUG --- [  MainThread] localstack.appinspector    : Adding AppInspector status, API, and WebSocket routes ...
+localstack-main  | 2026-09-09T07:30:53.159  INFO --- [  MainThread] alembic.runtime.plugins    : setup plugin alembic.autogenerate.schemas
+localstack-main  | 2026-09-09T07:30:53.159  INFO --- [  MainThread] alembic.runtime.plugins    : setup plugin alembic.autogenerate.tables
+localstack-main  | 2026-09-09T07:30:53.159  INFO --- [  MainThread] alembic.runtime.plugins    : setup plugin alembic.autogenerate.types
+localstack-main  | 2026-09-09T07:30:53.159  INFO --- [  MainThread] alembic.runtime.plugins    : setup plugin alembic.autogenerate.constraints
+localstack-main  | 2026-09-09T07:30:53.159  INFO --- [  MainThread] alembic.runtime.plugins    : setup plugin alembic.autogenerate.defaults
+localstack-main  | 2026-09-09T07:30:53.159  INFO --- [  MainThread] alembic.runtime.plugins    : setup plugin alembic.autogenerate.comments
+localstack-main  | 2026-09-09T07:30:53.159  INFO --- [  MainThread] alembic.runtime.plugins    : setup plugin alembic.autogenerate.checkconstraint_byname
+localstack-main  | 2026-09-09T07:30:54.503 DEBUG --- [  MainThread] l.p.core.replicator.router : Adding replicator routes...
+localstack-main  | 2026-09-09T07:30:54.648 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:bedrock-extension is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:54.648 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:chaos-basic is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:54.648 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:ecs-k8s-task-executor is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:54.648 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:pod-encryption is disabled, reason: This feature is not part of the active license agreement
+localstack-main  | 2026-09-09T07:30:54.648 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:snapshot is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:54.658 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:bedrock-extension is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:54.658 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:chaos-basic is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:54.658 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:ecs-k8s-task-executor is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:54.658 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:pod-encryption is disabled, reason: This feature is not part of the active license agreement
+localstack-main  | 2026-09-09T07:30:54.658 DEBUG --- [  MainThread] plux.runtime.manager       : plugin localstack.platform.plugin:snapshot is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:54.677 DEBUG --- [  MainThread] localstack.dns.server      : Overwriting container DNS server to point to localhost
+localstack-main  | 2026-09-09T07:30:54.678 DEBUG --- [  MainThread] localstack.utils.ssl       : Using cached SSL certificate (less than 24hrs since last update).
+localstack-main  | 2026-09-09T07:30:54.683 DEBUG --- [  MainThread] localstack.runtime.runtime : Listening on 0.0.0.0:4566,0.0.0.0:443
+localstack-main  | 2026-09-09T07:30:54.684 DEBUG --- [  MainThread] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.runtime.server.twisted = <class 'localstack.runtime.server.plugins.TwistedRuntimeServerPlugin'>)
+localstack-main  | 2026-09-09T07:30:54.684 DEBUG --- [  MainThread] plux.runtime.manager       : loading plugin localstack.runtime.server:twisted
+localstack-main  | 2026-09-09T07:30:54.745 DEBUG --- [ady_monitor)] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_ready._enable_iam_after_ready = <function _enable_iam_after_ready at 0xffff7e8c7600>)
+localstack-main  | 2026-09-09T07:30:54.745 DEBUG --- [ady_monitor)] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_ready:_enable_iam_after_ready
+localstack-main  | 2026-09-09T07:30:54.745 DEBUG --- [ady_monitor)] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_ready._run_init_scripts_on_ready = <function _run_init_scripts_on_ready at 0xffff79bd1300>)
+localstack-main  | 2026-09-09T07:30:54.745 DEBUG --- [ady_monitor)] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_ready:_run_init_scripts_on_ready
+localstack-main  | 2026-09-09T07:30:54.745 DEBUG --- [ady_monitor)] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.on_infra_ready.platform_plugins_on_infra_ready = <function platform_plugins_on_infra_ready at 0xffff796cc9a0>)
+localstack-main  | 2026-09-09T07:30:54.745 DEBUG --- [ady_monitor)] plux.runtime.manager       : loading plugin localstack.hooks.on_infra_ready:platform_plugins_on_infra_ready
+localstack-main  | 2026-09-09T07:30:54.745 DEBUG --- [ady_monitor)] plux.runtime.manager       : plugin localstack.platform.plugin:bedrock-extension is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:54.745 DEBUG --- [ady_monitor)] plux.runtime.manager       : plugin localstack.platform.plugin:chaos-basic is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:54.745 DEBUG --- [ady_monitor)] plux.runtime.manager       : plugin localstack.platform.plugin:ecs-k8s-task-executor is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:54.745 DEBUG --- [ady_monitor)] plux.runtime.manager       : plugin localstack.platform.plugin:pod-encryption is disabled, reason: This feature is not part of the active license agreement
+localstack-main  | 2026-09-09T07:30:54.745 DEBUG --- [ady_monitor)] plux.runtime.manager       : plugin localstack.platform.plugin:snapshot is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:30:54.751 DEBUG --- [ady_monitor)] l.extensions.plugins       : calling extensions on_platform_ready
+localstack-main  | Ready.
+localstack-main  | 2026-09-09T07:31:04.553 DEBUG --- [et.reactor-0] l.pro.core.aws.spec        : loading service catalog index cache file /usr/lib/localstack/service-catalog-2026_8_1-1_43_78.dill
+localstack-main  | 2026-09-09T07:31:04.629 DEBUG --- [et.reactor-0] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.aws.provider.iam:default = <function iam_basic at 0xffff7e8c6fc0>)
+localstack-main  | 2026-09-09T07:31:04.630 DEBUG --- [et.reactor-0] plux.runtime.manager       : loading plugin localstack.aws.provider:iam:default
+localstack-main  | 2026-09-09T07:31:04.817 DEBUG --- [et.reactor-0] plux.runtime.manager       : plugin localstack.platform.plugin:bedrock-extension is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:04.818 DEBUG --- [et.reactor-0] plux.runtime.manager       : plugin localstack.platform.plugin:chaos-basic is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:04.818 DEBUG --- [et.reactor-0] plux.runtime.manager       : plugin localstack.platform.plugin:ecs-k8s-task-executor is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:04.818 DEBUG --- [et.reactor-0] plux.runtime.manager       : plugin localstack.platform.plugin:pod-encryption is disabled, reason: This feature is not part of the active license agreement
+localstack-main  | 2026-09-09T07:31:04.818 DEBUG --- [et.reactor-0] plux.runtime.manager       : plugin localstack.platform.plugin:snapshot is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:04.821  INFO --- [et.reactor-0] l.p.c.services.iam.plugins : Configured IAM provider to use Advance Policy Simulator
+localstack-main  | 2026-09-09T07:31:04.876 DEBUG --- [et.reactor-1] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.aws.provider.sts:pro = <function sts at 0xffff7e918540>)
+localstack-main  | 2026-09-09T07:31:04.877 DEBUG --- [et.reactor-1] plux.runtime.manager       : loading plugin localstack.aws.provider:sts:pro
+localstack-main  | 2026-09-09T07:31:04.885 DEBUG --- [et.reactor-1] plux.runtime.manager       : plugin localstack.platform.plugin:bedrock-extension is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:04.885 DEBUG --- [et.reactor-1] plux.runtime.manager       : plugin localstack.platform.plugin:chaos-basic is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:04.885 DEBUG --- [et.reactor-1] plux.runtime.manager       : plugin localstack.platform.plugin:ecs-k8s-task-executor is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:04.885 DEBUG --- [et.reactor-1] plux.runtime.manager       : plugin localstack.platform.plugin:pod-encryption is disabled, reason: This feature is not part of the active license agreement
+localstack-main  | 2026-09-09T07:31:04.885 DEBUG --- [et.reactor-1] plux.runtime.manager       : plugin localstack.platform.plugin:snapshot is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:05.041 DEBUG --- [et.reactor-1] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.services.iam.plugins.sts = <class 'localstack.pro.core.services.sts.iam.STSIAMPlugin'>)
+localstack-main  | 2026-09-09T07:31:05.041 DEBUG --- [et.reactor-1] plux.runtime.manager       : loading plugin localstack.services.iam.plugins:sts
+localstack-main  | 2026-09-09T07:31:05.071 DEBUG --- [et.reactor-0] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.services.iam.plugins.iam = <class 'localstack.pro.core.services.iam.iam.IAMIAMPlugin'>)
+localstack-main  | 2026-09-09T07:31:05.071 DEBUG --- [et.reactor-0] plux.runtime.manager       : loading plugin localstack.services.iam.plugins:iam
+localstack-main  | 2026-09-09T07:31:05.103 DEBUG --- [et.reactor-0] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (NoSuchEntity) when calling the ListUserTags operation: The user with name * cannot be found.
+localstack-main  | 2026-09-09T07:31:05.106  INFO --- [et.reactor-0] localstack.request.aws     : AWS iam.GetUser => 200
+localstack-main  | 2026-09-09T07:31:05.191  INFO --- [et.reactor-0] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+localstack-main  | 2026-09-09T07:31:05.202 DEBUG --- [et.reactor-1] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (NoSuchEntity) when calling the ListRoleTags operation: The role with name reader_role cannot be found.
+localstack-main  | 2026-09-09T07:31:05.203  INFO --- [et.reactor-1] localstack.request.aws     : AWS iam.GetRole => 404 (NoSuchEntity)
+localstack-main  | 2026-09-09T07:31:05.217 DEBUG --- [et.reactor-2] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (NoSuchEntity) when calling the ListRoleTags operation: The role with name writer_role cannot be found.
+localstack-main  | 2026-09-09T07:31:05.218  INFO --- [et.reactor-2] localstack.request.aws     : AWS iam.GetRole => 404 (NoSuchEntity)
+localstack-main  | 2026-09-09T07:31:05.257 DEBUG --- [et.reactor-1] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (NoSuchEntity) when calling the ListRoleTags operation: The role with name reader_role cannot be found.
+localstack-main  | 2026-09-09T07:31:05.257  INFO --- [et.reactor-1] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 404 (NoSuchEntity)
+localstack-main  | 2026-09-09T07:31:05.286 DEBUG --- [et.reactor-0] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.aws.provider.apigateway:pro = <function apigateway at 0xffff80a362a0>)
+localstack-main  | 2026-09-09T07:31:05.286 DEBUG --- [et.reactor-0] plux.runtime.manager       : loading plugin localstack.aws.provider:apigateway:pro
+localstack-main  | 2026-09-09T07:31:05.287 DEBUG --- [et.reactor-5] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (NoSuchEntity) when calling the ListRoleTags operation: The role with name writer_role cannot be found.
+localstack-main  | 2026-09-09T07:31:05.288  INFO --- [et.reactor-5] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 404 (NoSuchEntity)
+localstack-main  | 2026-09-09T07:31:05.307 DEBUG --- [et.reactor-3] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.aws.provider.dynamodb:pro = <function dynamodb at 0xffff7eb19da0>)
+localstack-main  | 2026-09-09T07:31:05.307 DEBUG --- [et.reactor-3] plux.runtime.manager       : loading plugin localstack.aws.provider:dynamodb:pro
+localstack-main  | 2026-09-09T07:31:05.320 DEBUG --- [et.reactor-4] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.aws.provider.s3:pro = <function s3 at 0xffff7e900720>)
+localstack-main  | 2026-09-09T07:31:05.320 DEBUG --- [et.reactor-4] plux.runtime.manager       : loading plugin localstack.aws.provider:s3:pro
+localstack-main  | 2026-09-09T07:31:05.332 DEBUG --- [et.reactor-3] plux.runtime.manager       : plugin localstack.platform.plugin:bedrock-extension is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:05.332 DEBUG --- [et.reactor-3] plux.runtime.manager       : plugin localstack.platform.plugin:chaos-basic is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:05.332 DEBUG --- [et.reactor-3] plux.runtime.manager       : plugin localstack.platform.plugin:ecs-k8s-task-executor is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:05.332 DEBUG --- [et.reactor-3] plux.runtime.manager       : plugin localstack.platform.plugin:pod-encryption is disabled, reason: This feature is not part of the active license agreement
+localstack-main  | 2026-09-09T07:31:05.332 DEBUG --- [et.reactor-3] plux.runtime.manager       : plugin localstack.platform.plugin:snapshot is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:05.360 DEBUG --- [et.reactor-3] localstack.packages.api    : Installation of dynamodb-local 2 skipped (already installed).
+localstack-main  | 2026-09-09T07:31:05.360 DEBUG --- [et.reactor-3] localstack.packages.api    : Performing runtime setup for already installed package.
+localstack-main  | 2026-09-09T07:31:05.370 DEBUG --- [et.reactor-3] l.p.c.s.dynamodb.server    : Starting DynamoDB Local: ['java', '-XX:UseSVE=0', '-Xmx256m', '-javaagent:/usr/lib/localstack/dynamodb-local/2/ddb-local-loader-0.1.jar', '-Djava.library.path=/usr/lib/localstack/dynamodb-local/2/DynamoDBLocal_lib', '-jar', '/usr/lib/localstack/dynamodb-local/2/DynamoDBLocal.jar', '-port', '35649', '-dbPath', '/tmp/localstack/state/dynamodb']
+localstack-main  | 2026-09-09T07:31:05.371 DEBUG --- [-functhread4] localstack.utils.run       : Executing command: ['java', '-XX:UseSVE=0', '-Xmx256m', '-javaagent:/usr/lib/localstack/dynamodb-local/2/ddb-local-loader-0.1.jar', '-Djava.library.path=/usr/lib/localstack/dynamodb-local/2/DynamoDBLocal_lib', '-jar', '/usr/lib/localstack/dynamodb-local/2/DynamoDBLocal.jar', '-port', '35649', '-dbPath', '/tmp/localstack/state/dynamodb']
+localstack-main  | 2026-09-09T07:31:05.459  INFO --- [et.reactor-4] l.p.c.services.s3.provider : Using /tmp/localstack/state/s3 as storage path for s3 assets
+localstack-main  | 2026-09-09T07:31:05.581 DEBUG --- [et.reactor-4] plux.runtime.manager       : plugin localstack.platform.plugin:bedrock-extension is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:05.581 DEBUG --- [et.reactor-4] plux.runtime.manager       : plugin localstack.platform.plugin:chaos-basic is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:05.581 DEBUG --- [et.reactor-4] plux.runtime.manager       : plugin localstack.platform.plugin:ecs-k8s-task-executor is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:05.581 DEBUG --- [et.reactor-4] plux.runtime.manager       : plugin localstack.platform.plugin:pod-encryption is disabled, reason: This feature is not part of the active license agreement
+localstack-main  | 2026-09-09T07:31:05.581 DEBUG --- [et.reactor-4] plux.runtime.manager       : plugin localstack.platform.plugin:snapshot is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:05.581 DEBUG --- [et.reactor-4] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.services.iam.plugins.s3 = <class 'localstack.pro.core.services.s3.iam.S3IAMPlugin'>)
+localstack-main  | 2026-09-09T07:31:05.581 DEBUG --- [et.reactor-4] plux.runtime.manager       : loading plugin localstack.services.iam.plugins:s3
+localstack-main  | 2026-09-09T07:31:05.642  INFO --- [et.reactor-4] localstack.request.aws     : AWS s3.HeadBucket => 404 (NoSuchBucket)
+localstack-main  | 2026-09-09T07:31:05.657  INFO --- [et.reactor-1] localstack.request.aws     : AWS s3.GetPublicAccessBlock => 404 (NoSuchBucket)
+localstack-main  | 2026-09-09T07:31:06.067 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : Initializing DynamoDB Local with the following configuration:
+localstack-main  | 2026-09-09T07:31:06.067 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : Port:	35649
+localstack-main  | 2026-09-09T07:31:06.067 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : InMemory:	false
+localstack-main  | 2026-09-09T07:31:06.067 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : Version:	3.3.1
+localstack-main  | 2026-09-09T07:31:06.067 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : DbPath:	/tmp/localstack/state/dynamodb
+localstack-main  | 2026-09-09T07:31:06.067 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : SharedDb:	false
+localstack-main  | 2026-09-09T07:31:06.067 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : shouldDelayTransientStatuses:	false
+localstack-main  | 2026-09-09T07:31:06.067 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : CorsParams:	null
+localstack-main  | 2026-09-09T07:31:06.068 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : 
+localstack-main  | 2026-09-09T07:31:06.600 DEBUG --- [et.reactor-0] l.p.c.s.a.n.e.router_basic : Registering API Gateway routes.
+localstack-main  | 2026-09-09T07:31:06.697 DEBUG --- [et.reactor-0] plux.runtime.manager       : plugin localstack.platform.plugin:bedrock-extension is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:06.697 DEBUG --- [et.reactor-0] plux.runtime.manager       : plugin localstack.platform.plugin:chaos-basic is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:06.697 DEBUG --- [et.reactor-0] plux.runtime.manager       : plugin localstack.platform.plugin:ecs-k8s-task-executor is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:06.697 DEBUG --- [et.reactor-0] plux.runtime.manager       : plugin localstack.platform.plugin:pod-encryption is disabled, reason: This feature is not part of the active license agreement
+localstack-main  | 2026-09-09T07:31:06.697 DEBUG --- [et.reactor-0] plux.runtime.manager       : plugin localstack.platform.plugin:snapshot is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:06.697  INFO --- [et.reactor-0] localstack.utils.bootstrap : Execution of "_load_service_plugin" took 1411.29ms
+localstack-main  | 2026-09-09T07:31:06.698 DEBUG --- [et.reactor-0] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.aws.provider.apigatewayv2:pro = <function apigatewayv2 at 0xffff80a36a20>)
+localstack-main  | 2026-09-09T07:31:06.698 DEBUG --- [et.reactor-0] plux.runtime.manager       : loading plugin localstack.aws.provider:apigatewayv2:pro
+localstack-main  | 2026-09-09T07:31:06.746 DEBUG --- [et.reactor-0] plux.runtime.manager       : plugin localstack.platform.plugin:bedrock-extension is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:06.746 DEBUG --- [et.reactor-0] plux.runtime.manager       : plugin localstack.platform.plugin:chaos-basic is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:06.746 DEBUG --- [et.reactor-0] plux.runtime.manager       : plugin localstack.platform.plugin:ecs-k8s-task-executor is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:06.746 DEBUG --- [et.reactor-0] plux.runtime.manager       : plugin localstack.platform.plugin:pod-encryption is disabled, reason: This feature is not part of the active license agreement
+localstack-main  | 2026-09-09T07:31:06.746 DEBUG --- [et.reactor-0] plux.runtime.manager       : plugin localstack.platform.plugin:snapshot is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:06.746  INFO --- [et.reactor-0] localstack.utils.bootstrap : Execution of "require" took 1459.79ms
+localstack-main  | 2026-09-09T07:31:06.746 DEBUG --- [et.reactor-0] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.services.iam.plugins.apigateway = <class 'localstack.pro.core.services.apigateway.iam.ApiGatewayIAMPlugin'>)
+localstack-main  | 2026-09-09T07:31:06.746 DEBUG --- [et.reactor-0] plux.runtime.manager       : loading plugin localstack.services.iam.plugins:apigateway
+localstack-main  | 2026-09-09T07:31:07.089  INFO --- [et.reactor-3] localstack.utils.bootstrap : Execution of "require" took 1781.78ms
+localstack-main  | 2026-09-09T07:31:07.089 DEBUG --- [et.reactor-3] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.services.iam.plugins.dynamodb = <class 'localstack.pro.core.services.dynamodb.iam.DynamoDBIAMPlugin'>)
+localstack-main  | 2026-09-09T07:31:07.089 DEBUG --- [et.reactor-3] plux.runtime.manager       : loading plugin localstack.services.iam.plugins:dynamodb
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : 07:31:07.139 [qtp152848959-32] WARN  software.amazon.dynamodb.services.local.server.LocalDynamoDBServerHandler - DynamoDBLocalServiceException exception occured
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : software.amazon.dynamodb.services.exceptions.DynamoDBLocalServiceException: Cannot do operations on a non-existent table
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at software.amazon.dynamodb.services.exceptions.AWSExceptionFactory.buildLocalServiceException(AWSExceptionFactory.java:95)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at software.amazon.dynamodb.services.exceptions.AWSExceptionFactory.buildAWSException(AWSExceptionFactory.java:60)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at software.amazon.dynamodb.services.local.shared.access.api.DynamoDbApiFunction.validateTableExists(DynamoDbApiFunction.java:100)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at software.amazon.dynamodb.services.local.shared.access.api.cp.ControlPlaneFunction.getTableDescriptionHelper(ControlPlaneFunction.java:470)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at software.amazon.dynamodb.services.local.shared.access.api.cp.DescribeTableFunction.apply(DescribeTableFunction.java:25)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at software.amazon.dynamodb.services.local.shared.access.client.LocalDynamoDbClient.describeTable(LocalDynamoDbClient.java:306)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at software.amazon.dynamodb.services.local.server.LocalDynamoDBRequestHandler.describeTable(LocalDynamoDBRequestHandler.java:178)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at software.amazon.dynamodb.services.local.dispatchers.DescribeTableDispatcher.enact(DescribeTableDispatcher.java:17)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at software.amazon.dynamodb.services.local.dispatchers.DescribeTableDispatcher.enact(DescribeTableDispatcher.java:11)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at software.amazon.dynamodb.services.local.server.LocalDynamoDBServerHandler.packageDynamoDBResponse(LocalDynamoDBServerHandler.java:331)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at software.amazon.dynamodb.services.local.server.LocalDynamoDBServerHandler.handle(LocalDynamoDBServerHandler.java:419)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.server.handler.ContextHandler.handle(ContextHandler.java:1253)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:148)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.server.Server.handle(Server.java:197)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.server.internal.HttpChannelState$HandlerInvoker.run(HttpChannelState.java:804)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.server.internal.HttpConnection.onFillable(HttpConnection.java:420)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.server.internal.HttpConnection$FillableCallback.succeeded(HttpConnection.java:1790)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:54)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:1009)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1240)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1194)
+localstack-main  | 2026-09-09T07:31:07.141 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at java.base/java.lang.Thread.run(Unknown Source)
+localstack-main  | 2026-09-09T07:31:07.146  INFO --- [et.reactor-3] localstack.request.aws     : AWS dynamodb.DescribeTable => 400 (ResourceNotFoundException)
+localstack-main  | 2026-09-09T07:31:07.162 DEBUG --- [et.reactor-2] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (NoSuchEntity) when calling the ListRoleTags operation: The role with name writer_role cannot be found.
+localstack-main  | 2026-09-09T07:31:07.162  INFO --- [et.reactor-2] localstack.request.aws     : AWS iam.GetRolePolicy => 404 (NoSuchEntity)
+localstack-main  | 2026-09-09T07:31:07.163 DEBUG --- [et.reactor-4] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (NoSuchEntity) when calling the ListRoleTags operation: The role with name reader_role cannot be found.
+localstack-main  | 2026-09-09T07:31:07.164  INFO --- [et.reactor-4] localstack.request.aws     : AWS iam.GetRolePolicy => 404 (NoSuchEntity)
+localstack-main  | 2026-09-09T07:31:07.217 DEBUG --- [et.reactor-5] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.aws.provider.lambda:pro = <function lambda_ at 0xffff7e8df1a0>)
+localstack-main  | 2026-09-09T07:31:07.218 DEBUG --- [et.reactor-5] plux.runtime.manager       : loading plugin localstack.aws.provider:lambda:pro
+localstack-main  | 2026-09-09T07:31:07.334 DEBUG --- [et.reactor-5] l.p.c.s.lambda_.urlrouter  : Registering parameterized Lambda routes.
+localstack-main  | 2026-09-09T07:31:07.357 DEBUG --- [et.reactor-5] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.lambda.runtime_executor.docker = <class 'localstack.pro.core.services.lambda_.invocation.plugins_basic.DockerRuntimeExecutorPlugin'>)
+localstack-main  | 2026-09-09T07:31:07.358 DEBUG --- [et.reactor-5] plux.runtime.manager       : loading plugin localstack.lambda.runtime_executor:docker
+localstack-main  | 2026-09-09T07:31:07.361 DEBUG --- [et.reactor-5] plux.runtime.manager       : plugin localstack.platform.plugin:bedrock-extension is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:07.361 DEBUG --- [et.reactor-5] plux.runtime.manager       : plugin localstack.platform.plugin:chaos-basic is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:07.361 DEBUG --- [et.reactor-5] plux.runtime.manager       : plugin localstack.platform.plugin:ecs-k8s-task-executor is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:07.361 DEBUG --- [et.reactor-5] plux.runtime.manager       : plugin localstack.platform.plugin:pod-encryption is disabled, reason: This feature is not part of the active license agreement
+localstack-main  | 2026-09-09T07:31:07.361 DEBUG --- [et.reactor-5] plux.runtime.manager       : plugin localstack.platform.plugin:snapshot is disabled, reason: Load condition for plugin was false
+localstack-main  | 2026-09-09T07:31:07.423 DEBUG --- [et.reactor-5] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.services.iam.plugins.lambda = <class 'localstack.pro.core.services.lambda_.iam.LambdaIAMPlugin'>)
+localstack-main  | 2026-09-09T07:31:07.423 DEBUG --- [et.reactor-5] plux.runtime.manager       : loading plugin localstack.services.iam.plugins:lambda
+localstack-main  | 2026-09-09T07:31:07.520 DEBUG --- [et.reactor-5] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (ResourceNotFoundException) when calling the ListTags operation: Function not found: arn:aws:lambda:us-east-1:000000000000:function:writer_lambda_function
+localstack-main  | 2026-09-09T07:31:07.521  INFO --- [et.reactor-5] localstack.request.aws     : AWS lambda.GetFunction => 404 (ResourceNotFoundException)
+localstack-main  | 2026-09-09T07:31:07.523 DEBUG --- [et.reactor-3] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (ResourceNotFoundException) when calling the ListTags operation: Function not found: arn:aws:lambda:us-east-1:000000000000:function:reader_lambda_function
+localstack-main  | 2026-09-09T07:31:07.524  INFO --- [et.reactor-3] localstack.request.aws     : AWS lambda.GetFunction => 404 (ResourceNotFoundException)
+localstack-main  | 2026-09-09T07:31:07.531 DEBUG --- [et.reactor-3] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (ResourceNotFoundException) when calling the ListTags operation: Function not found: arn:aws:lambda:us-east-1:000000000000:function:writer_lambda_function
+localstack-main  | 2026-09-09T07:31:07.532  INFO --- [et.reactor-3] localstack.request.aws     : AWS lambda.GetPolicy => 404 (ResourceNotFoundException)
+localstack-main  | 2026-09-09T07:31:07.538  INFO --- [et.reactor-1] localstack.request.aws     : AWS s3.GetBucketNotificationConfiguration => 404 (NoSuchBucket)
+localstack-main  | 2026-09-09T07:31:08.992  INFO --- [et.reactor-0] localstack.request.aws     : AWS apigateway.GetRestApi => 404 (NotFoundException)
+localstack-main  | 2026-09-09T07:31:09.010  INFO --- [et.reactor-2] localstack.request.aws     : AWS apigateway.GetResource => 404 (NotFoundException)
+localstack-main  | 2026-09-09T07:31:09.015 DEBUG --- [et.reactor-0] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (ResourceNotFoundException) when calling the ListTags operation: Function not found: arn:aws:lambda:us-east-1:000000000000:function:reader_lambda_function
+localstack-main  | 2026-09-09T07:31:09.016  INFO --- [et.reactor-0] localstack.request.aws     : AWS lambda.GetPolicy => 404 (ResourceNotFoundException)
+localstack-main  | 2026-09-09T07:31:09.025  INFO --- [et.reactor-3] localstack.request.aws     : AWS apigateway.GetMethod => 404 (NotFoundException)
+localstack-main  | 2026-09-09T07:31:09.033  INFO --- [et.reactor-5] localstack.request.aws     : AWS apigateway.GetIntegration => 404 (NotFoundException)
+localstack-main  | 2026-09-09T07:31:09.042  INFO --- [et.reactor-1] localstack.request.aws     : AWS apigateway.GetDeployment => 404 (NotFoundException)
+localstack-main  | 2026-09-09T07:31:09.051  INFO --- [et.reactor-2] localstack.request.aws     : AWS apigateway.GetStage => 404 (NotFoundException)
+localstack-main  | 2026-09-09T07:31:13.231 DEBUG --- [et.reactor-0] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (NoSuchEntity) when calling the ListUserTags operation: The user with name * cannot be found.
+localstack-main  | 2026-09-09T07:31:13.239  INFO --- [et.reactor-0] localstack.request.aws     : AWS iam.GetUser => 200
+localstack-main  | 2026-09-09T07:31:13.333 DEBUG --- [et.reactor-5] l.p.c.s.i.p.engine         : Unable to match regex ^\/(.+)$ onto /
+localstack-main  | 2026-09-09T07:31:13.333 DEBUG --- [et.reactor-5] l.p.c.s.i.p.engine         : Could not get tags from service: Provided ARN: * must be of the format: arn:partition:service:region:account:resource
+localstack-main  | 2026-09-09T07:31:13.339  INFO --- [et.reactor-5] localstack.request.aws     : AWS iam.CreateRole => 200
+localstack-main  | 2026-09-09T07:31:13.342 DEBUG --- [et.reactor-1] l.p.c.s.i.p.engine         : Unable to match regex ^\/(.+)$ onto /
+localstack-main  | 2026-09-09T07:31:13.342 DEBUG --- [et.reactor-1] l.p.c.s.i.p.engine         : Could not get tags from service: Provided ARN: * must be of the format: arn:partition:service:region:account:resource
+localstack-main  | 2026-09-09T07:31:13.342  INFO --- [et.reactor-1] localstack.request.aws     : AWS iam.CreateRole => 200
+localstack-main  | 2026-09-09T07:31:13.355  INFO --- [et.reactor-4] localstack.request.aws     : AWS s3.HeadBucket => 404 (NoSuchBucket)
+localstack-main  | 2026-09-09T07:31:13.364  INFO --- [et.reactor-3] localstack.request.aws     : AWS iam.GetRole => 200
+localstack-main  | 2026-09-09T07:31:13.366  INFO --- [et.reactor-4] localstack.request.aws     : AWS s3.CreateBucket => 200
+localstack-main  | 2026-09-09T07:31:13.370  INFO --- [et.reactor-5] localstack.request.aws     : AWS iam.GetRole => 200
+localstack-main  | 2026-09-09T07:31:13.377  INFO --- [et.reactor-3] localstack.request.aws     : AWS s3.HeadBucket => 200
+localstack-main  | 2026-09-09T07:31:13.385  INFO --- [et.reactor-3] localstack.request.aws     : AWS s3.GetBucketTagging => 404 (NoSuchTagSet)
+localstack-main  | 2026-09-09T07:31:13.388  INFO --- [et.reactor-1] localstack.request.aws     : AWS iam.ListRolePolicies => 200
+localstack-main  | 2026-09-09T07:31:13.389  INFO --- [et.reactor-4] localstack.request.aws     : AWS iam.ListRolePolicies => 200
+localstack-main  | 2026-09-09T07:31:13.392  INFO --- [et.reactor-3] localstack.request.aws     : AWS s3.PutBucketTagging => 204
+localstack-main  | 2026-09-09T07:31:13.398  INFO --- [et.reactor-4] localstack.request.aws     : AWS s3.HeadBucket => 200
+localstack-main  | 2026-09-09T07:31:13.403  INFO --- [et.reactor-1] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200
+localstack-main  | 2026-09-09T07:31:13.408  INFO --- [et.reactor-5] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200
+localstack-main  | 2026-09-09T07:31:13.410  INFO --- [et.reactor-6] localstack.request.aws     : AWS s3.GetBucketPolicy => 404 (NoSuchBucketPolicy)
+localstack-main  | 2026-09-09T07:31:13.414  INFO --- [et.reactor-3] localstack.request.aws     : AWS s3.GetBucketAcl => 200
+localstack-main  | 2026-09-09T07:31:13.425  INFO --- [et.reactor-5] localstack.request.aws     : AWS s3.GetBucketCors => 404 (NoSuchCORSConfiguration)
+localstack-main  | 2026-09-09T07:31:13.445  INFO --- [et.reactor-4] localstack.request.aws     : AWS s3.GetBucketWebsite => 404 (NoSuchWebsiteConfiguration)
+localstack-main  | 2026-09-09T07:31:13.447  INFO --- [et.reactor-6] localstack.request.aws     : AWS iam.AttachRolePolicy => 200
+localstack-main  | 2026-09-09T07:31:13.449  INFO --- [et.reactor-6] localstack.request.aws     : AWS s3.GetBucketVersioning => 200
+localstack-main  | 2026-09-09T07:31:13.450  INFO --- [et.reactor-1] localstack.request.aws     : AWS iam.AttachRolePolicy => 200
+localstack-main  | 2026-09-09T07:31:13.456  INFO --- [et.reactor-3] localstack.request.aws     : AWS s3.GetBucketAccelerateConfiguration => 200
+localstack-main  | 2026-09-09T07:31:13.459  INFO --- [et.reactor-5] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200
+localstack-main  | 2026-09-09T07:31:13.460  INFO --- [et.reactor-3] localstack.request.aws     : AWS s3.GetBucketRequestPayment => 200
+localstack-main  | 2026-09-09T07:31:13.462  INFO --- [et.reactor-4] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200
+localstack-main  | 2026-09-09T07:31:13.465  INFO --- [et.reactor-5] localstack.request.aws     : AWS s3.GetBucketLogging => 200
+localstack-main  | 2026-09-09T07:31:13.468  INFO --- [et.reactor-1] localstack.request.aws     : AWS s3.GetBucketLifecycleConfiguration => 404 (NoSuchLifecycleConfiguration)
+localstack-main  | 2026-09-09T07:31:13.471  INFO --- [et.reactor-6] localstack.request.aws     : AWS s3.GetBucketReplication => 404 (ReplicationConfigurationNotFoundError)
+localstack-main  | 2026-09-09T07:31:13.475  INFO --- [et.reactor-4] localstack.request.aws     : AWS s3.GetBucketEncryption => 200
+localstack-main  | 2026-09-09T07:31:13.479  INFO --- [et.reactor-3] localstack.request.aws     : AWS s3.GetObjectLockConfiguration => 404 (ObjectLockConfigurationNotFoundError)
+localstack-main  | 2026-09-09T07:31:13.481  INFO --- [et.reactor-5] localstack.request.aws     : AWS s3.HeadBucket => 200
+localstack-main  | 2026-09-09T07:31:13.484  INFO --- [et.reactor-1] localstack.request.aws     : AWS s3.GetBucketTagging => 200
+localstack-main  | 2026-09-09T07:31:13.496  INFO --- [et.reactor-6] localstack.request.aws     : AWS s3.PutPublicAccessBlock => 200
+localstack-main  | 2026-09-09T07:31:13.505  INFO --- [et.reactor-4] localstack.request.aws     : AWS s3.GetPublicAccessBlock => 200
+localstack-main  | 2026-09-09T07:31:13.515  INFO --- [et.reactor-2] localstack.request.aws     : AWS apigateway.CreateRestApi => 201
+localstack-main  | 2026-09-09T07:31:13.518  INFO --- [et.reactor-3] localstack.request.aws     : AWS s3.GetPublicAccessBlock => 200
+localstack-main  | 2026-09-09T07:31:13.523  INFO --- [et.reactor-5] localstack.request.aws     : AWS apigateway.GetRestApi => 200
+localstack-main  | 2026-09-09T07:31:13.529  INFO --- [et.reactor-1] localstack.request.aws     : AWS apigateway.GetResources => 200
+localstack-main  | 2026-09-09T07:31:13.545  INFO --- [et.reactor-6] localstack.request.aws     : AWS apigateway.CreateResource => 201
+localstack-main  | 2026-09-09T07:31:13.550  INFO --- [et.reactor-4] localstack.request.aws     : AWS apigateway.GetResource => 200
+localstack-main  | 2026-09-09T07:31:13.573  INFO --- [et.reactor-3] localstack.request.aws     : AWS apigateway.PutMethod => 201
+localstack-main  | 2026-09-09T07:31:13.620 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : javassist.NotFoundException: com.amazonaws.services.dynamodbv2.local.shared.access.api.cp.CreateTableFunction
+localstack-main  | 2026-09-09T07:31:13.620 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at javassist.ClassPool.get(ClassPool.java:430)
+localstack-main  | 2026-09-09T07:31:13.620 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at cloud.localstack.ClassRewriter$1.transform(ClassRewriter.java:30)
+localstack-main  | 2026-09-09T07:31:13.620 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at java.instrument/java.lang.instrument.ClassFileTransformer.transform(Unknown Source)
+localstack-main  | 2026-09-09T07:31:13.620 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at java.instrument/sun.instrument.TransformerManager.transform(Unknown Source)
+localstack-main  | 2026-09-09T07:31:13.620 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at java.instrument/sun.instrument.InstrumentationImpl.transform(Unknown Source)
+localstack-main  | 2026-09-09T07:31:13.620 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+localstack-main  | 2026-09-09T07:31:13.620 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at java.base/java.lang.ClassLoader.defineClass(Unknown Source)
+localstack-main  | 2026-09-09T07:31:13.620 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at java.base/java.security.SecureClassLoader.defineClass(Unknown Source)
+localstack-main  | 2026-09-09T07:31:13.620 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(Unknown Source)
+localstack-main  | 2026-09-09T07:31:13.620 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(Unknown Source)
+localstack-main  | 2026-09-09T07:31:13.620 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(Unknown Source)
+localstack-main  | 2026-09-09T07:31:13.620 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
+localstack-main  | 2026-09-09T07:31:13.620 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
+localstack-main  | 2026-09-09T07:31:13.620 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+localstack-main  | 2026-09-09T07:31:13.620 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at software.amazon.dynamodb.services.local.shared.access.client.LocalDynamoDbClient.createTable(LocalDynamoDbClient.java:232)
+localstack-main  | 2026-09-09T07:31:13.621 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at software.amazon.dynamodb.services.local.server.LocalDynamoDBRequestHandler.createTable(LocalDynamoDBRequestHandler.java:163)
+localstack-main  | 2026-09-09T07:31:13.621 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at software.amazon.dynamodb.services.local.dispatchers.CreateTableDispatcher.enact(CreateTableDispatcher.java:17)
+localstack-main  | 2026-09-09T07:31:13.621 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at software.amazon.dynamodb.services.local.dispatchers.CreateTableDispatcher.enact(CreateTableDispatcher.java:11)
+localstack-main  | 2026-09-09T07:31:13.621 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at software.amazon.dynamodb.services.local.server.LocalDynamoDBServerHandler.packageDynamoDBResponse(LocalDynamoDBServerHandler.java:331)
+localstack-main  | 2026-09-09T07:31:13.621 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at software.amazon.dynamodb.services.local.server.LocalDynamoDBServerHandler.handle(LocalDynamoDBServerHandler.java:419)
+localstack-main  | 2026-09-09T07:31:13.621 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.server.handler.ContextHandler.handle(ContextHandler.java:1253)
+localstack-main  | 2026-09-09T07:31:13.621 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:148)
+localstack-main  | 2026-09-09T07:31:13.621 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.server.Server.handle(Server.java:197)
+localstack-main  | 2026-09-09T07:31:13.621 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.server.internal.HttpChannelState$HandlerInvoker.run(HttpChannelState.java:804)
+localstack-main  | 2026-09-09T07:31:13.621 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.server.internal.HttpConnection.onFillable(HttpConnection.java:420)
+localstack-main  | 2026-09-09T07:31:13.621 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.server.internal.HttpConnection$FillableCallback.succeeded(HttpConnection.java:1790)
+localstack-main  | 2026-09-09T07:31:13.621 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+localstack-main  | 2026-09-09T07:31:13.621 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:54)
+localstack-main  | 2026-09-09T07:31:13.621 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:1009)
+localstack-main  | 2026-09-09T07:31:13.621 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1240)
+localstack-main  | 2026-09-09T07:31:13.621 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1194)
+localstack-main  | 2026-09-09T07:31:13.621 DEBUG --- [-functhread4] l.p.c.s.dynamodb.server    : at java.base/java.lang.Thread.run(Unknown Source)
+localstack-main  | 2026-09-09T07:31:13.698  INFO --- [et.reactor-0] localstack.request.aws     : AWS dynamodb.CreateTable => 200
+localstack-main  | 2026-09-09T07:31:13.707  INFO --- [et.reactor-5] localstack.request.aws     : AWS dynamodb.DescribeTable => 200
+localstack-main  | 2026-09-09T07:31:13.713  INFO --- [et.reactor-1] localstack.request.aws     : AWS dynamodb.DescribeTable => 200
+localstack-main  | 2026-09-09T07:31:13.720  INFO --- [et.reactor-2] localstack.request.aws     : AWS dynamodb.DescribeContinuousBackups => 200
+localstack-main  | 2026-09-09T07:31:13.727  INFO --- [et.reactor-6] localstack.request.aws     : AWS dynamodb.DescribeTimeToLive => 200
+localstack-main  | 2026-09-09T07:31:13.730  INFO --- [et.reactor-3] localstack.request.aws     : AWS dynamodb.ListTagsOfResource => 200
+localstack-main  | 2026-09-09T07:31:13.753 DEBUG --- [et.reactor-2] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (ValidationException) when calling the ListTags operation: 1 validation error detected: Value 'arn:aws:iam::000000000000:role/reader_role' at 'resource' failed to satisfy constraint: Member must satisfy regular expression pattern: arn:(aws[a-zA-Z-]*):lambda:(eusc-)?[a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}:\d{12}:(function:[a-zA-Z0-9-_]+(:(\$LATEST|[a-zA-Z0-9-_]+))?|layer:([a-zA-Z0-9-_]+)|code-signing-config:csc-[a-z0-9]{17}|event-source-mapping:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|capacity-provider:[a-zA-Z0-9-_]+)
+localstack-main  | 2026-09-09T07:31:13.757  INFO --- [et.reactor-1] localstack.request.aws     : AWS iam.PutRolePolicy => 200
+localstack-main  | 2026-09-09T07:31:13.758  INFO --- [et.reactor-5] localstack.request.aws     : AWS iam.PutRolePolicy => 200
+localstack-main  | 2026-09-09T07:31:13.759 DEBUG --- [et.reactor-2] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (ResourceNotFoundException) when calling the ListTags operation: Function not found: arn:aws:lambda:us-east-1:000000000000:function:reader_lambda_function
+localstack-main  | 2026-09-09T07:31:13.801  INFO --- [et.reactor-5] localstack.request.aws     : AWS iam.GetRolePolicy => 200
+localstack-main  | 2026-09-09T07:31:13.805  INFO --- [et.reactor-1] localstack.request.aws     : AWS iam.GetRolePolicy => 200
+localstack-main  | 2026-09-09T07:31:13.813  INFO --- [et.reactor-3] localstack.request.aws     : AWS iam.GetRolePolicy => 200
+localstack-main  | 2026-09-09T07:31:13.816  INFO --- [et.reactor-5] localstack.request.aws     : AWS iam.GetRolePolicy => 200
+localstack-main  | 2026-09-09T07:31:13.846 DEBUG --- [et.reactor-2] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.lambda_inject_ldm_provisioner.ldm_inject_ldm_provisioner = <function ldm_inject_ldm_provisioner at 0xffff35d6ef20>)
+localstack-main  | 2026-09-09T07:31:13.846 DEBUG --- [et.reactor-2] plux.runtime.manager       : loading plugin localstack.hooks.lambda_inject_ldm_provisioner:ldm_inject_ldm_provisioner
+localstack-main  | 2026-09-09T07:31:13.846 DEBUG --- [et.reactor-2] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.lambda_create_function_version.ldm_notify_create_function_version = <function ldm_notify_create_function_version at 0xffff35d6eca0>)
+localstack-main  | 2026-09-09T07:31:13.846 DEBUG --- [et.reactor-2] plux.runtime.manager       : loading plugin localstack.hooks.lambda_create_function_version:ldm_notify_create_function_version
+localstack-main  | 2026-09-09T07:31:13.849  INFO --- [et.reactor-2] localstack.request.aws     : AWS lambda.CreateFunction => 201
+localstack-main  | 2026-09-09T07:31:13.852 DEBUG --- [rvice-task_0] plux.runtime.manager       : instantiating plugin PluginSpec(localstack.hooks.lambda_prepare_docker_executors.prepare_docker_executor_hook = <function prepare_docker_executor_hook at 0xffff35b70fe0>)
+localstack-main  | 2026-09-09T07:31:13.859 DEBUG --- [rvice-task_0] plux.runtime.manager       : loading plugin localstack.hooks.lambda_prepare_docker_executors:prepare_docker_executor_hook
+localstack-main  | 2026-09-09T07:31:13.859 DEBUG --- [rvice-task_0] l.p.c.s.l.i.docker_runtime : Executing prepare docker executor pro-hook for function arn:aws:lambda:us-east-1:000000000000:function:reader_lambda_function:$LATEST
+localstack-main  | 2026-09-09T07:31:13.864 DEBUG --- [rvice-task_0] localstack.packages.api    : Installation of lambda-runtime v0.2.5 skipped (already installed).
+localstack-main  | 2026-09-09T07:31:13.865 DEBUG --- [rvice-task_0] localstack.packages.api    : Performing runtime setup for already installed package.
+localstack-main  | 2026-09-09T07:31:13.867 DEBUG --- [rvice-task_0] l.p.c.s.l.i.lambda_models  : Saving code reader_lambda_function-3b01bf35-a835-4f6d-9546-c1d2a5dfb6ab to disk
+localstack-main  | 2026-09-09T07:31:13.900 DEBUG --- [rvice-task_0] localstack.utils.run       : Executing command: ['unzip', '-o', '-q', '/tmp/tmp6bolp5g8']
+localstack-main  | 2026-09-09T07:31:13.904 DEBUG --- [rvice-task_0] l.u.c.docker_sdk_client    : Pulling Docker image: public.ecr.aws/lambda/python:3.12
+localstack-main  | 2026-09-09T07:31:13.913  INFO --- [et.reactor-2] localstack.request.aws     : AWS lambda.GetFunction => 200
+localstack-main  | 2026-09-09T07:31:14.994 DEBUG --- [rvice-task_0] l.p.c.s.l.i.version_manage : Version preparation of function arn:aws:lambda:us-east-1:000000000000:function:reader_lambda_function:$LATEST took 1144.70ms
+localstack-main  | 2026-09-09T07:31:14.995 DEBUG --- [rvice-task_0] l.p.c.s.l.i.version_manage : Changing Lambda arn:aws:lambda:us-east-1:000000000000:function:reader_lambda_function:$LATEST (id be25aac1) to Active
+localstack-main  | 2026-09-09T07:31:14.995 DEBUG --- [rvice-task_0] l.p.c.s.l.i.event_manager  : Starting event manager arn:aws:lambda:us-east-1:000000000000:function:reader_lambda_function:$LATEST id 281471468260048
+localstack-main  | 2026-09-09T07:31:18.928  INFO --- [et.reactor-1] localstack.request.aws     : AWS lambda.GetFunction => 200
+localstack-main  | 2026-09-09T07:31:18.936  INFO --- [et.reactor-0] localstack.request.aws     : AWS lambda.GetFunction => 200
+localstack-main  | 2026-09-09T07:31:18.941  INFO --- [et.reactor-4] localstack.request.aws     : AWS lambda.ListVersionsByFunction => 200
+localstack-main  | 2026-09-09T07:31:18.945  INFO --- [et.reactor-5] localstack.request.aws     : AWS lambda.GetFunctionCodeSigningConfig => 200
+localstack-main  | 2026-09-09T07:31:18.951 DEBUG --- [et.reactor-2] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (ValidationException) when calling the ListTags operation: 1 validation error detected: Value 'arn:aws:iam::000000000000:role/writer_role' at 'resource' failed to satisfy constraint: Member must satisfy regular expression pattern: arn:(aws[a-zA-Z-]*):lambda:(eusc-)?[a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}:\d{12}:(function:[a-zA-Z0-9-_]+(:(\$LATEST|[a-zA-Z0-9-_]+))?|layer:([a-zA-Z0-9-_]+)|code-signing-config:csc-[a-z0-9]{17}|event-source-mapping:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|capacity-provider:[a-zA-Z0-9-_]+)
+localstack-main  | 2026-09-09T07:31:18.953 DEBUG --- [et.reactor-2] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (ResourceNotFoundException) when calling the ListTags operation: Function not found: arn:aws:lambda:us-east-1:000000000000:function:writer_lambda_function
+localstack-main  | 2026-09-09T07:31:18.965  INFO --- [et.reactor-1] localstack.request.aws     : AWS lambda.AddPermission => 201
+localstack-main  | 2026-09-09T07:31:18.970  INFO --- [et.reactor-4] localstack.request.aws     : AWS lambda.GetPolicy => 200
+localstack-main  | 2026-09-09T07:31:18.982  INFO --- [et.reactor-2] localstack.request.aws     : AWS lambda.CreateFunction => 201
+localstack-main  | 2026-09-09T07:31:18.983 DEBUG --- [rvice-task_0] l.p.c.s.l.i.docker_runtime : Executing prepare docker executor pro-hook for function arn:aws:lambda:us-east-1:000000000000:function:writer_lambda_function:$LATEST
+localstack-main  | 2026-09-09T07:31:18.983 DEBUG --- [rvice-task_0] l.p.c.s.l.i.lambda_models  : Saving code writer_lambda_function-360a6a43-a1a7-4fd3-aec2-acbc27777657 to disk
+localstack-main  | 2026-09-09T07:31:18.997  INFO --- [et.reactor-2] localstack.request.aws     : AWS lambda.GetFunction => 200
+localstack-main  | 2026-09-09T07:31:19.011  INFO --- [et.reactor-5] localstack.request.aws     : AWS apigateway.PutIntegration => 201
+localstack-main  | 2026-09-09T07:31:19.019 DEBUG --- [rvice-task_0] localstack.utils.run       : Executing command: ['unzip', '-o', '-q', '/tmp/tmp28r41iq8']
+localstack-main  | 2026-09-09T07:31:19.024  INFO --- [et.reactor-2] localstack.request.aws     : AWS apigateway.GetIntegration => 200
+localstack-main  | 2026-09-09T07:31:19.037 DEBUG --- [rvice-task_0] l.p.c.s.l.i.version_manage : Version preparation of function arn:aws:lambda:us-east-1:000000000000:function:writer_lambda_function:$LATEST took 53.67ms
+localstack-main  | 2026-09-09T07:31:19.037 DEBUG --- [rvice-task_0] l.p.c.s.l.i.version_manage : Changing Lambda arn:aws:lambda:us-east-1:000000000000:function:writer_lambda_function:$LATEST (id dc2764a4) to Active
+localstack-main  | 2026-09-09T07:31:19.037 DEBUG --- [rvice-task_0] l.p.c.s.l.i.event_manager  : Starting event manager arn:aws:lambda:us-east-1:000000000000:function:writer_lambda_function:$LATEST id 281471466469520
+localstack-main  | 2026-09-09T07:31:19.073  INFO --- [et.reactor-0] localstack.request.aws     : AWS apigateway.CreateDeployment => 201
+localstack-main  | 2026-09-09T07:31:19.077  INFO --- [et.reactor-6] localstack.request.aws     : AWS apigateway.GetDeployment => 200
+localstack-main  | 2026-09-09T07:31:19.090  INFO --- [et.reactor-4] localstack.request.aws     : AWS apigateway.CreateStage => 201
+localstack-main  | 2026-09-09T07:31:19.093  INFO --- [et.reactor-3] localstack.request.aws     : AWS apigateway.GetStage => 200
+localstack-main  | 2026-09-09T07:31:24.022  INFO --- [et.reactor-5] localstack.request.aws     : AWS lambda.GetFunction => 200
+localstack-main  | 2026-09-09T07:31:24.035  INFO --- [et.reactor-2] localstack.request.aws     : AWS lambda.GetFunction => 200
+localstack-main  | 2026-09-09T07:31:24.041  INFO --- [et.reactor-6] localstack.request.aws     : AWS lambda.ListVersionsByFunction => 200
+localstack-main  | 2026-09-09T07:31:24.048  INFO --- [et.reactor-3] localstack.request.aws     : AWS lambda.GetFunctionCodeSigningConfig => 200
+localstack-main  | 2026-09-09T07:31:24.065  INFO --- [et.reactor-1] localstack.request.aws     : AWS lambda.AddPermission => 201
+localstack-main  | 2026-09-09T07:31:24.072  INFO --- [et.reactor-0] localstack.request.aws     : AWS lambda.GetPolicy => 200
+localstack-main  | 2026-09-09T07:31:24.112  INFO --- [et.reactor-5] l.p.c.s.i.p.handler        : User: s3.amazonaws.com is not authorized to perform: lambda:InvokeFunction on resource: arn:aws:lambda:us-east-1:000000000000:function:writer_lambda_function because no identity-based policy allows the lambda:InvokeFunction action
+localstack-main  | 2026-09-09T07:31:24.112 DEBUG --- [et.reactor-5] l.p.c.s.i.p.handler        : Necessary permissions for this action: ["Action 'lambda:InvokeFunction' for 'arn:aws:lambda:us-east-1:000000000000:function:writer_lambda_function'"]
+localstack-main  | 2026-09-09T07:31:24.113 DEBUG --- [et.reactor-5] l.p.c.s.i.p.handler        : 0 permissions have been explicitly denied: []
+localstack-main  | 2026-09-09T07:31:24.113 DEBUG --- [et.reactor-5] l.p.c.s.i.p.handler        : 0 permissions have been explicitly allowed: []
+localstack-main  | 2026-09-09T07:31:24.113 DEBUG --- [et.reactor-5] l.p.c.s.i.p.handler        : 1 permissions have been implicitly denied: ["Action 'lambda:InvokeFunction' for 'arn:aws:lambda:us-east-1:000000000000:function:writer_lambda_function'"]
+localstack-main  | 2026-09-09T07:31:24.118  INFO --- [et.reactor-4] localstack.request.aws     : AWS s3.PutBucketNotificationConfiguration => 400 (InvalidArgument)
+localstack-main  | 2026-09-09T07:32:36.409  INFO --- [et.reactor-6] localstack.request.aws     : AWS lambda.GetPolicy => 200
+localstack-main  | 2026-09-09T07:33:33.051  INFO --- [et.reactor-6] localstack.request.aws     : AWS lambda.GetFunctionConfiguration => 200
+localstack-main  | 2026-09-09T07:33:34.951  INFO --- [et.reactor-3] localstack.request.aws     : AWS lambda.GetFunctionConfiguration => 200
+localstack-main  | 2026-09-09T07:33:36.579  INFO --- [et.reactor-2] localstack.request.aws     : AWS s3.HeadBucket => 200
+localstack-main  | 2026-09-09T07:33:38.213  INFO --- [et.reactor-0] localstack.request.aws     : AWS s3.GetBucketNotificationConfiguration => 200
+localstack-main  | 2026-09-09T07:35:31.209 DEBUG --- [et.reactor-2] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (NoSuchEntity) when calling the ListUserTags operation: The user with name * cannot be found.
+localstack-main  | 2026-09-09T07:35:31.217  INFO --- [et.reactor-2] localstack.request.aws     : AWS iam.GetUser => 200
+localstack-main  | 2026-09-09T07:35:31.303  INFO --- [et.reactor-4] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+localstack-main  | 2026-09-09T07:35:31.311  INFO --- [et.reactor-3] localstack.request.aws     : AWS apigateway.GetRestApi => 200
+localstack-main  | 2026-09-09T07:35:31.315  INFO --- [et.reactor-1] localstack.request.aws     : AWS s3.HeadBucket => 200
+localstack-main  | 2026-09-09T07:35:31.320  INFO --- [et.reactor-6] localstack.request.aws     : AWS apigateway.GetResources => 200
+localstack-main  | 2026-09-09T07:35:31.322  INFO --- [et.reactor-3] localstack.request.aws     : AWS s3.GetBucketPolicy => 404 (NoSuchBucketPolicy)
+localstack-main  | 2026-09-09T07:35:31.328  INFO --- [et.reactor-2] localstack.request.aws     : AWS iam.GetRole => 200
+localstack-main  | 2026-09-09T07:35:31.332  INFO --- [et.reactor-5] localstack.request.aws     : AWS iam.GetRole => 200
+localstack-main  | 2026-09-09T07:35:31.335  INFO --- [et.reactor-6] localstack.request.aws     : AWS s3.GetBucketAcl => 200
+localstack-main  | 2026-09-09T07:35:31.346  INFO --- [et.reactor-1] localstack.request.aws     : AWS apigateway.GetResource => 200
+localstack-main  | 2026-09-09T07:35:31.349  INFO --- [et.reactor-5] localstack.request.aws     : AWS s3.GetBucketCors => 404 (NoSuchCORSConfiguration)
+localstack-main  | 2026-09-09T07:35:31.356  INFO --- [et.reactor-6] localstack.request.aws     : AWS apigateway.GetMethod => 200
+localstack-main  | 2026-09-09T07:35:31.358  INFO --- [et.reactor-2] localstack.request.aws     : AWS iam.ListRolePolicies => 200
+localstack-main  | 2026-09-09T07:35:31.360  INFO --- [et.reactor-0] localstack.request.aws     : AWS dynamodb.DescribeTable => 200
+localstack-main  | 2026-09-09T07:35:31.361  INFO --- [et.reactor-4] localstack.request.aws     : AWS iam.ListRolePolicies => 200
+localstack-main  | 2026-09-09T07:35:31.364  INFO --- [et.reactor-2] localstack.request.aws     : AWS s3.GetBucketWebsite => 404 (NoSuchWebsiteConfiguration)
+localstack-main  | 2026-09-09T07:35:31.368  INFO --- [et.reactor-4] localstack.request.aws     : AWS s3.GetBucketVersioning => 200
+localstack-main  | 2026-09-09T07:35:31.375  INFO --- [et.reactor-0] localstack.request.aws     : AWS iam.GetRolePolicy => 200
+localstack-main  | 2026-09-09T07:35:31.378  INFO --- [et.reactor-2] localstack.request.aws     : AWS s3.GetBucketAccelerateConfiguration => 200
+localstack-main  | 2026-09-09T07:35:31.379  INFO --- [et.reactor-6] localstack.request.aws     : AWS iam.GetRolePolicy => 200
+localstack-main  | 2026-09-09T07:35:31.385  INFO --- [et.reactor-5] localstack.request.aws     : AWS s3.GetBucketRequestPayment => 200
+localstack-main  | 2026-09-09T07:35:31.396  INFO --- [et.reactor-2] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200
+localstack-main  | 2026-09-09T07:35:31.398  INFO --- [et.reactor-0] localstack.request.aws     : AWS s3.GetBucketLogging => 200
+localstack-main  | 2026-09-09T07:35:31.402  INFO --- [et.reactor-1] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200
+localstack-main  | 2026-09-09T07:35:31.407  INFO --- [et.reactor-2] localstack.request.aws     : AWS s3.GetBucketLifecycleConfiguration => 404 (NoSuchLifecycleConfiguration)
+localstack-main  | 2026-09-09T07:35:31.408  INFO --- [et.reactor-3] localstack.request.aws     : AWS dynamodb.DescribeContinuousBackups => 200
+localstack-main  | 2026-09-09T07:35:31.420  INFO --- [et.reactor-6] localstack.request.aws     : AWS s3.GetBucketReplication => 404 (ReplicationConfigurationNotFoundError)
+localstack-main  | 2026-09-09T07:35:31.423  INFO --- [et.reactor-0] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200
+localstack-main  | 2026-09-09T07:35:31.427  INFO --- [et.reactor-5] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200
+localstack-main  | 2026-09-09T07:35:31.428  INFO --- [et.reactor-0] localstack.request.aws     : AWS s3.GetBucketEncryption => 200
+localstack-main  | 2026-09-09T07:35:31.429  INFO --- [et.reactor-4] localstack.request.aws     : AWS dynamodb.DescribeTimeToLive => 200
+localstack-main  | 2026-09-09T07:35:31.432  INFO --- [et.reactor-4] localstack.request.aws     : AWS dynamodb.ListTagsOfResource => 200
+localstack-main  | 2026-09-09T07:35:31.433  INFO --- [et.reactor-6] localstack.request.aws     : AWS s3.GetObjectLockConfiguration => 404 (ObjectLockConfigurationNotFoundError)
+localstack-main  | 2026-09-09T07:35:31.436  INFO --- [et.reactor-3] localstack.request.aws     : AWS s3.HeadBucket => 200
+localstack-main  | 2026-09-09T07:35:31.439  INFO --- [et.reactor-5] localstack.request.aws     : AWS s3.GetBucketTagging => 200
+localstack-main  | 2026-09-09T07:35:31.450  INFO --- [et.reactor-5] localstack.request.aws     : AWS s3.GetPublicAccessBlock => 200
+localstack-main  | 2026-09-09T07:35:31.451  INFO --- [et.reactor-2] localstack.request.aws     : AWS iam.GetRolePolicy => 200
+localstack-main  | 2026-09-09T07:35:31.452  INFO --- [et.reactor-1] localstack.request.aws     : AWS iam.GetRolePolicy => 200
+localstack-main  | 2026-09-09T07:35:31.469  INFO --- [et.reactor-6] localstack.request.aws     : AWS lambda.GetFunction => 200
+localstack-main  | 2026-09-09T07:35:31.481  INFO --- [et.reactor-0] localstack.request.aws     : AWS lambda.GetFunction => 200
+localstack-main  | 2026-09-09T07:35:31.487  INFO --- [et.reactor-5] localstack.request.aws     : AWS lambda.ListVersionsByFunction => 200
+localstack-main  | 2026-09-09T07:35:31.488  INFO --- [et.reactor-2] localstack.request.aws     : AWS lambda.ListVersionsByFunction => 200
+localstack-main  | 2026-09-09T07:35:31.493  INFO --- [et.reactor-4] localstack.request.aws     : AWS lambda.GetFunctionCodeSigningConfig => 200
+localstack-main  | 2026-09-09T07:35:31.495  INFO --- [et.reactor-6] localstack.request.aws     : AWS lambda.GetFunctionCodeSigningConfig => 200
+localstack-main  | 2026-09-09T07:35:31.505  INFO --- [et.reactor-1] localstack.request.aws     : AWS apigateway.GetIntegration => 200
+localstack-main  | 2026-09-09T07:35:31.508  INFO --- [et.reactor-0] localstack.request.aws     : AWS lambda.GetPolicy => 200
+localstack-main  | 2026-09-09T07:35:31.509  INFO --- [et.reactor-2] localstack.request.aws     : AWS lambda.GetPolicy => 200
+localstack-main  | 2026-09-09T07:35:31.513  INFO --- [et.reactor-3] localstack.request.aws     : AWS apigateway.GetDeployment => 200
+localstack-main  | 2026-09-09T07:35:31.519  INFO --- [et.reactor-5] localstack.request.aws     : AWS apigateway.GetStage => 200
+localstack-main  | 2026-09-09T07:35:35.526 DEBUG --- [et.reactor-1] l.p.c.s.i.p.engine         : Could not get tags from service: An error occurred (NoSuchEntity) when calling the ListUserTags operation: The user with name * cannot be found.
+localstack-main  | 2026-09-09T07:35:35.528  INFO --- [et.reactor-1] localstack.request.aws     : AWS iam.GetUser => 200
+localstack-main  | 2026-09-09T07:35:35.631  INFO --- [et.reactor-6] localstack.request.aws     : AWS apigateway.CreateDeployment => 201
+localstack-main  | 2026-09-09T07:35:35.642  INFO --- [et.reactor-5] localstack.request.aws     : AWS apigateway.GetDeployment => 200
+localstack-main  | 2026-09-09T07:35:35.655  INFO --- [et.reactor-1] l.p.c.s.i.p.handler        : User: s3.amazonaws.com is not authorized to perform: lambda:InvokeFunction on resource: arn:aws:lambda:us-east-1:000000000000:function:writer_lambda_function because no identity-based policy allows the lambda:InvokeFunction action
+localstack-main  | 2026-09-09T07:35:35.655 DEBUG --- [et.reactor-1] l.p.c.s.i.p.handler        : Necessary permissions for this action: ["Action 'lambda:InvokeFunction' for 'arn:aws:lambda:us-east-1:000000000000:function:writer_lambda_function'"]
+localstack-main  | 2026-09-09T07:35:35.655 DEBUG --- [et.reactor-1] l.p.c.s.i.p.handler        : 0 permissions have been explicitly denied: []
+localstack-main  | 2026-09-09T07:35:35.655 DEBUG --- [et.reactor-1] l.p.c.s.i.p.handler        : 0 permissions have been explicitly allowed: []
+localstack-main  | 2026-09-09T07:35:35.655 DEBUG --- [et.reactor-1] l.p.c.s.i.p.handler        : 1 permissions have been implicitly denied: ["Action 'lambda:InvokeFunction' for 'arn:aws:lambda:us-east-1:000000000000:function:writer_lambda_function'"]
+localstack-main  | 2026-09-09T07:35:35.657  INFO --- [et.reactor-4] localstack.request.aws     : AWS s3.PutBucketNotificationConfiguration => 400 (InvalidArgument)
+localstack-main  | 2026-09-09T07:35:35.721  INFO --- [et.reactor-6] localstack.request.aws     : AWS apigateway.UpdateStage => 200
+localstack-main  | 2026-09-09T07:35:35.735  INFO --- [et.reactor-4] localstack.request.aws     : AWS apigateway.GetStage => 200
+localstack-main  | 2026-09-09T07:35:35.809  INFO --- [et.reactor-3] localstack.request.aws     : AWS apigateway.DeleteDeployment => 202

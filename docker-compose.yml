@@ -13,7 +13,7 @@ services:
       - DEBUG=${DEBUG:-1}
       - PERSISTENCE=${PERSISTENCE:-0}
       - LAMBDA_KEEPALIVE_MS=0
-      - ENFORCE_IAM=1
+      - ENFORCE_IAM=0
     volumes:
       - '${LOCALSTACK_VOLUME_DIR:-./volume}:/var/lib/localstack'
       - '/var/run/docker.sock:/var/run/docker.sock'
