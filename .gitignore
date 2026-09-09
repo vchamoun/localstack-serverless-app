@@ -7,3 +7,4 @@ volume/
 terraform.tfstate.d/
 tfplan
 fault-injection-exercises.md
+.terraform.lock.hcl
