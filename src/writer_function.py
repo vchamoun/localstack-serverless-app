@@ -41,14 +41,8 @@ def lambda_handler(event, context):
             table.put_item(
                 Item={
                     "fileName": key,
-                    "baseName": base,
                     "extension": ext,
                     "size": int(obj.get("size", 0)),
-                    "bucket": rec["s3"]["bucket"]["name"],
-                    "eventName": name,
-                    "eventTime": rec["eventTime"],
-                    "eTag": obj.get("eTag"),
-                    "sequencer": obj.get("sequencer"),
                 }
             )
             processed += 1
