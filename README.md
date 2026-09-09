@@ -69,17 +69,26 @@ lstk status
 ## Structure
 ```
 .
-├── terraform.tf          Provider versions, AWS provider config, caller-identity data source
-├── variables.tf          Input variables: region, bucket name, table name, runtime
-├── storage.tf            S3 bucket and DynamoDB table
-├── writer.tf             Write path: S3 event → Lambda → DynamoDB
-├── reader.tf             Read path: Lambda that scans the table
-├── apigw.tf              REST API exposing GET /files, plus the endpoint output
+├── terraform.tf            Provider versions, AWS provider config, caller-identity data source
+├── variables.tf            Input variables: region, bucket name, table name, runtime
+├── outputs.tf              Bucket name, table name, REST API ID, endpoint URL
+├── storage.tf              S3 bucket and DynamoDB table
+├── writer.tf               Write path: S3 event → Lambda → DynamoDB
+├── reader.tf               Read path: Lambda that scans the table
+├── apigw.tf                REST API exposing GET /files
+│
 ├── src/
-│   ├── writer_function.py   Indexes object metadata on ObjectCreated / ObjectRemoved
+│   ├── writer_function.py  Indexes object metadata on ObjectCreated / ObjectRemoved
 │   └── read_function.py     Returns table contents as an API Gateway proxy response
-├── docker-compose.yml    LocalStack container
-├── .terraform.lock.hcl   Pinned provider versions
+│
+├── scripts/
+│   └── test.sh             Exercises the full chain via awslocal
+│
+├── logs/
+│   ├── localstack-iam-disabled.log   Debug log, ENFORCE_IAM=0 (full deploy succeeds)
+│   └── localstack-iam-enforced.log   Debug log, ENFORCE_IAM=1 (bucket notification denied)
+│
+├── docker-compose.yml      LocalStack container, debug logging enabled
 └── s3-lambda-dynamodb-apigw-topology.drawio   Editable architecture diagram
 ```
 ## Testing
