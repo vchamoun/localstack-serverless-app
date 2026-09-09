@@ -13,6 +13,18 @@ Runnable agains LocalStack or real AWS Accounts.
 3. API Gateway with GET endpoints with the list of the entries from DynamoDB 
 
 
+## Prerequisites
+
+| Tool | Why | Notes |
+|---|---|---|
+| **Docker** | Runs the LocalStack container, and LocalStack runs Lambda in sibling containers | Daemon must be running, not just installed |
+| **Terraform** | Applies the configuration | `>= 1.2` per `terraform.tf` |
+| **LocalStack account** | `docker-compose.yml` requires an auth token | Free account; needed for `ENFORCE_IAM` |
+| **`lstk`** | Points Terraform at LocalStack without editing the config | LocalStack CLI |
+| **`awslocal`** | Used by `scripts/test.sh` to talk to LocalStack | `pip install awscli-local`; requires the AWS CLI |
+| **`jq`** | Parses JSON in the test script | |
+
+
 ## Quickstart
 
 **1. Add your LocalStack auth token**
@@ -71,7 +83,18 @@ lstk status
 └── s3-lambda-dynamodb-apigw-topology.drawio   Editable architecture diagram
 ```
 ## Testing
-**Read the resource names from Terraform**
+
+### Automated
+
+```bash
+./scripts/test.sh
+```
+
+Runs the full chain and asserts each step. Exits non-zero on failure.
+
+### Step by step
+
+**Read the resource names from Terraform outputs.tf**
 
 ```bash
 BUCKET=$(terraform output -raw bucket_name)
@@ -79,25 +102,28 @@ TABLE=$(terraform output -raw table_name)
 API=$(terraform output -raw rest_api_id)
 ```
 
-
 **1. Upload a text file to S3**
 
 ```bash
 echo hello > /tmp/hello.txt
-lstk aws s3 cp /tmp/hello.txt "s3://$BUCKET/hello.txt"
+awslocal s3 cp /tmp/hello.txt "s3://$BUCKET/hello.txt"
 ```
 
 **2. Confirm the Lambda ran**
 
 ```bash
-lstk aws logs tail /aws/lambda/writer_lambda_function --since 5m
+awslocal logs tail /aws/lambda/writer_lambda_function --since 5m
 ```
+
+Expect the S3 event printed as JSON, followed by a `REPORT` line.
 
 **3. Confirm the metadata was written**
 
 ```bash
-lstk aws dynamodb scan --table-name "$TABLE"
+awslocal dynamodb scan --table-name "$TABLE"
 ```
+
+Expect one item with `fileName`, `extension` and `size`.
 
 **4. Read the data back through the API**
 
@@ -105,13 +131,16 @@ lstk aws dynamodb scan --table-name "$TABLE"
 curl -i "http://localhost:4566/restapis/$API/dev/_user_request_/files"
 ```
 
+Expect `200` and `{"count": 1, "items": [...]}`.
+
 **5. Confirm deletes are handled**
 
 ```bash
-lstk aws s3 rm "s3://$BUCKET/hello.txt"
-lstk aws dynamodb scan --table-name "$TABLE" --select COUNT
+awslocal s3 rm "s3://$BUCKET/hello.txt"
+awslocal dynamodb scan --table-name "$TABLE" --select COUNT
 ```
 
+Expect `Count` back to `0`.
 
-
-    
+> `terraform output files_endpoint` returns an AWS-style hostname that does **not**
+> resolve against LocalStack. Use the path form in step 4 locally.
